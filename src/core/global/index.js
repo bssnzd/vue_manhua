@@ -43,5 +43,15 @@ class Global {
         });
       }
     }
+    getFromdata(res){
+      var str='';
+      for(var i in res){
+        str+=`${i}=${res[i]}&`
+      }
+      return str.substr(0,str.length-1);
+    }
+    goDetails(res){
+      window.location.href=`http://m.buka.cn/m/${res}`
+    }
 }
 export default new Global();

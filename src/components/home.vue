@@ -1,8 +1,8 @@
 <template>
   <div>
-   
-     <router-view v-show="!$store.state.loginbool"/>
-     
+      <layhead></layhead>
+     <router-view />
+     <!-- v-show="!$store.state.loginbool" -->
       <!-- keepAlive true 禁止重复加载  false不禁止-->
   </div>
 </template>
@@ -19,6 +19,7 @@ export default {
   mounted(){
   },
   components:{
+    layhead:lay_head
   }
 }
 </script>

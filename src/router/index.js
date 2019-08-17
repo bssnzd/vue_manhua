@@ -23,25 +23,25 @@ Vue.use(Router)
           component: resolve => require(['@/components/main/index'], resolve)
         },
         {
-          path:"sort",
-          name: 'sort',
-          component: resolve => require(['@/components/main/sort'], resolve),
+          path:"rank",
+          name: 'rank',
+          component: resolve => require(['@/components/main/rank'], resolve),
         },
         {
-          path:"cart",
-          name: 'cart',
-          component: resolve => require(['@/components/main/cart'], resolve)
+          path:"category",
+          name: 'category',
+          component: resolve => require(['@/components/main/category'], resolve)
         },
         {
-          path:"item",
-          name: 'item',
-          component: resolve => require(['@/components/main/item'], resolve)
+          path:"search",
+          name: 'search',
+          component: resolve => require(['@/components/main/search'], resolve)
         },
         {
-          path:"my",
-          name: 'my',
-          component: resolve => require(['@/components/main/my'], resolve)
-        }
+          path:"catelist",
+          name: 'catelist',
+          component: resolve => require(['@/components/main/catelist'], resolve)
+        },
       ]
     }
   ]
